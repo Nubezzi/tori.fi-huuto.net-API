@@ -1,26 +1,4 @@
-
-// index.js
-const express = require('express')
-
-const app = express()
-const PORT = 4000
-
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `)
-})
-
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
-
-app.get('/about', (req, res) => {
-  res.send('This is my about route..... ')
-})
-
-// Export the Express API
-module.exports = app
-
-/*const PORT = process.env.PORT || 8000
+const PORT = process.env.PORT || 8000
 const express = require('express')
 const cheerio = require('cheerio')
 const axios = require('axios')
@@ -186,4 +164,4 @@ app.get('/kaikki/:searchword/:county', async (req, res) => {
 
 app.listen(PORT, () => console.log(`Running on ${PORT}`))
 
-module.exports = app;*/
+module.exports = app;
