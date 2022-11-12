@@ -163,3 +163,5 @@ app.get('/kaikki/:searchword/:county', async (req, res) => {
 });
 
 app.listen(PORT, () => console.log(`Running on ${PORT}`))
+
+module.exports = app;
