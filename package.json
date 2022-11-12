@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Simple API to scrape and utilize info from tori.fi",
   "main": "index.js",
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "start": "nodemon index.js"
   },
