@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "build": "babel src --out-dir build --source-maps=inline --verbose"
+    "build": "next build"
   },
   "author": "Paavo Nurminen",
   "license": "ISC",
@@ -14,7 +14,6 @@
     "babel-cli": "^6.26.0",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.2",
-    "next": "^13.0.3",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
