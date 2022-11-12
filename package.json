@@ -4,14 +4,17 @@
   "description": "Simple API to scrape and utilize info from tori.fi",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "babel src --out-dir public --source-maps=inline --verbose"
   },
   "author": "Paavo Nurminen",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.1.3",
+    "babel-cli": "^6.26.0",
     "cheerio": "^1.0.0-rc.12",
     "express": "^4.18.2",
+    "next": "^13.0.3",
     "nodemon": "^2.0.20"
   },
   "devDependencies": {
