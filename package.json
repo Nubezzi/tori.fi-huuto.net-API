@@ -4,8 +4,7 @@
   "description": "Simple API to scrape and utilize info from tori.fi",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    
+    "start": "nodemon index.js"
   },
   "author": "Paavo Nurminen",
   "license": "ISC",
