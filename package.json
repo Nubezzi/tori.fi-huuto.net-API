@@ -1,7 +1,7 @@
 {
-  "name": "toriapi",
+  "name": "Tori.fi & Huuto.net API",
   "version": "1.0.0",
-  "description": "Simple API to scrape and utilize info from tori.fi",
+  "description": "Simple API to scrape and utilize info from tori.fi and huuto.net",
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
