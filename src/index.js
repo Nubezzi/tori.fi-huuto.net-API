@@ -2,15 +2,21 @@ const PORT = process.env.PORT || 8000
 const express = require('express')
 const cheerio = require('cheerio')
 const axios = require('axios')
-//const { data } = require('cheerio/lib/api/attributes')
 
 const app = express()
 
 const dataArr = []
 
+//empty homepage
 app.get('/', (req, res) => {
     res.json('nothing here, try /[searchwordhere] instead')
 })
+
+// for the memes
+app.get('/huutis', (req, res) => {
+    res.json('XYEET :D')
+})
+
 //Only tori, whole finland
 app.get('/tori/:searchword', async (req, res) => {
     const searchword = req.params.searchword
@@ -30,6 +36,7 @@ app.get('/tori/:searchword', async (req, res) => {
             res.json(dataArr)
         }).catch((err) => console.log(err))
 });
+
 //only huuto, whole finland
 app.get('/huuto/:searchword', async (req, res) => {
     const searchword = req.params.searchword
